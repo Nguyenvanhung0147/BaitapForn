@@ -1,0 +1,21 @@
+body {  
+
+    background-color: white;
+}
+table{
+    background: #ffd94d;
+    border: 0 solid yellow;
+  margin: auto;
+}
+thead{
+    background: #fff14d;    
+}
+td {
+    color: blue;
+}
+h3{
+    font-family: verdana;
+    text-align: center;
+    color: #ff8100;
+    font-size: medium;
+}

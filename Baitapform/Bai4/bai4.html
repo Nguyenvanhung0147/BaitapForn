@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Check Information</title>
+        <link rel="stylesheet" href="bai4.css">
+    </head>
+    <body>
+ 
+        <form action="xulythongtin.php" name="information" method="POST">
+            <fieldset>
+                <legend>Enter your information</legend>
+                <table>
+                    <tr><td>Họ và tên:</td>
+                        <td><input type="text" name="name" value=""/></td>
+                    </tr>
+                    <tr><td>Địa Chỉ:</td>
+                        <td><input type="text" name="address" value=""/></td>
+                    </tr>
+                    <tr><td>SDT:</td>
+                        <td><input type="text" name="phone" value=""/></td>
+                    </tr>
+                    <tr><td>Giới Tính:</td>
+                        <td><input type="radio" name="radGT" value="Nam" checked> <label for="css">Nam</label>
+                            <input type="radio" name="radGT" value="Nữ" ><label for="css">Nữ</label>
+                        </td>
+                    </tr>
+                    <tr><td>Quốc Tịch:</td>
+                      <td>
+                        <select name="NATIONALITY">
+                            <optgroup>
+                                <option value="Lao">Lao</option>
+                                <option value="Campuchia">Campuchia</option>
+                            </optgroup>
+                            <option selected value="vietnam">  vietnam</option>
+                        </select>
+                      </td>  
+                    </tr>
+                    <tr><td>Các môn đã học:</td>
+                       <td>
+                        <input type="checkbox" name="web[]" value="PHP">
+                        <label for="vehicle1"> PHP & SQL</label>
+                        <input type="checkbox" name="web[]" value="C#">
+                        <label for="vehicle1"> C#</label>
+                        <input type="checkbox" name="web[]" value="XML">
+                        <label for="vehicle1"> XML</label>
+                        <input type="checkbox" name="web[]" value="Python">
+                        <label for="vehicle1"> Python</label>
+                       </td>
+                    </tr>
+                    <tr><td>Ghi chú:</td>
+                        <td><textarea rows="10" cols="35" name="text"></textarea></td>
+                    </tr>
+                    <tr>
+                          <td align="center"><input type="submit" value="Gửi" name="gui" /></td>
+                          <td><input type="reset" value="Hủy" name="huy" /></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
